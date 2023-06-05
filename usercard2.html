@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Card1</title>
+    <title>User Card2</title>
     <link rel="stylesheet" href="usercard2.css">
 </head>
 <body>
     <div class="conatiner">
         <h2>User Card1</h2>
         <div class="card">
-            <img class="cardimage" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/6.png">
+            <img id="rohit-img"class="cardimage" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/6.png">
             <div class="cardbody">
-                <h4>Rohit Sharma</h4>
-                <p class="cardbody-desigantion">Captain of Mumbai Indians</p>
+                <h4  id="rohit">Rohit Sharma</h4>
+                <p id="rohit-desc" class="cardbody-desigantion">Captain of Mumbai Indians</p>
             </div>
         </div>
+        <button onclick="fipdata()">Click Here</button>
     </div>
+    
+    <script src="usercard2.js"></script>
 </body>
 </html>

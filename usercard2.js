@@ -5,8 +5,8 @@ let CaptainRohit={
 
 }
 let youngRohit ={
-    imgurl="https://static.toiimg.com/thumb/imgsize-23456,msid-2876942,width-600,resizemode-4/2876942.jpg",
-    name="Rohit Gurunath Sharma",
+    imgurl:"https://static.toiimg.com/thumb/imgsize-23456,msid-2876942,width-600,resizemode-4/2876942.jpg",
+    name:"Rohit Gurunath Sharma",
     Description:"Cricketer"
 }
 let isCaptainRohit=true;

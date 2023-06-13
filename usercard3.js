@@ -4,22 +4,13 @@ let CaptainRohit={
     Description:"Captain of Mumbai Indians"
 
 }
-let youngRohit ={
-    imgurl:"https://static.toiimg.com/thumb/imgsize-23456,msid-2876942,width-600,resizemode-4/2876942.jpg",
-    name:"Rohit Gurunath Sharma",
-    Description:"Cricketer"
-}
-let isCaptainRohit=true;
+
+
 let displayobject;
-let flipdata=function(){
-    if(isCaptainRohit == true){
-        displayobject=youngRohit;
-        isCaptainRohit=false;
-    }
-    else{
-        displayobject=CaptainRohit;
-        isCaptainRohit=true;
-    }
+let getrandomuser=function(){
+    fetch("https://randomuser.me/api")
+    .then(response => response.json())
+    .then(data => console.log(data))
     document.getElementById("rohit-img").src = displayobject.imgurl;
     document.getElementById("rohit").innerHTML = displayobject.name;
     document.getElementById("rohit-desc").innerHTML = displayobject.Description;

@@ -10,8 +10,13 @@ let displayobject;
 let getrandomuser=function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
-    .then(data=>console.log(data))
-    document.getElementById("rohit-img").src = displayobject.imgurl;
-    document.getElementById("rohit").innerHTML = displayobject.name;
-    document.getElementById("rohit-desc").innerHTML = displayobject.Description;
+    .then(data=>{
+        displayobject.name=data.results[0].name.first+ " " +data.results[0].name.last
+        displayobject.imgageurl=data.results[0].picture.large
+        displayobject.description=data.results[0].gender
+        document.getElementById("rohit-img").src = displayobject.imgurl;
+        document.getElementById("rohit").innerHTML = displayobject.name;
+        document.getElementById("rohit-desc").innerHTML = displayobject.Description;
+    })
+    
 }

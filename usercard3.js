@@ -8,7 +8,7 @@ let CaptainRohit={
 
 let displayobject={
      name:"",
-     imgurl="",
+     imgurl:"",
      Description:""
 };
 let getrandomuser=function(){

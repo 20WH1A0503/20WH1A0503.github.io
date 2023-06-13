@@ -6,7 +6,11 @@ let CaptainRohit={
 }
 
 
-let displayobject;
+let displayobject={
+     name:"",
+     imgurl="",
+     Description:""
+};
 let getrandomuser=function(){
     fetch("https://randomuser.me/api")
     .then(response => response.json())
